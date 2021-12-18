@@ -1,4 +1,4 @@
-# fb-token-bug
+# fb-token-bug-v8
 
 This repository's purpose is to provide a minimal reproduction pwa that demonstrates a firebase id token bug as noted [here](https://github.com/firebase/firebase-js-sdk/issues/5813). To trigger the bug, deploy the app, sign in, wait an hour, place the app offline, and reload the page. Reloading the app offline prior to one hour will keep you signed in. After the hour passes, the user will be force signed out due to an error being thrown in `getIdTokenResult()`.
 
