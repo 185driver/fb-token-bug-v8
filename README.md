@@ -32,6 +32,10 @@ VUE_APP_FIREBASE_MESSAGING_SENDER_ID=89....49
 VUE_APP_FIREBASE_APP_ID=1:89....49:web:da8....864
 ```
 
+### Deploy location is hardcoded
+
+The default configuration assumes your app will be deployed at the specified domain sub-path, e.g. `https://foobar.com/fb-token-bug-v8/`. If instead your app is deployed at the root of a domain, e.g. `https://my-app.com/`, delete the `publicPath` property in `vue.config.js`. Alternatively, you can edit the `publicPath` property to deploy to a different sub-path.
+
 ### Compiles and hot-reloads for development
 
 ```sh
